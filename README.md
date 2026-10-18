@@ -1,4 +1,4 @@
-# Digiloot Cliproom
+# Cliproom
 
 Web app untuk mengambil video/audio dari tautan media sosial publik sebagai bahan riset dan produksi konten.
 Alur: **Tempel link → Ambil → Preview → Download**.
