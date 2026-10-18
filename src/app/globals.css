@@ -1,0 +1,56 @@
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource-variable/inter';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: #f4f1ea;
+    color: #171717;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply font-sans antialiased;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+  :focus-visible {
+    outline: 3px solid #6d5db8;
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: #d7f36a;
+    color: #171717;
+  }
+}
+
+@layer components {
+  .label-caps {
+    @apply font-display text-[11px] font-semibold uppercase tracking-[0.14em];
+  }
+  .btn {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 rounded border-2 border-ink px-5 font-display text-sm font-bold uppercase tracking-wide transition-transform;
+  }
+  .btn:not(:disabled):hover {
+    transform: translate(-1px, -1px);
+  }
+  .btn:not(:disabled):active {
+    transform: translate(2px, 2px);
+  }
+  .btn:disabled {
+    @apply cursor-not-allowed opacity-60;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
