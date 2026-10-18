@@ -29,7 +29,6 @@ Perintah lain: `npm run typecheck`, `npm test`, `npm run build`, `npm start`.
 | `RAPIDAPI_KEY` | ya | Key RapidAPI. Hanya dipakai di server. Gunakan key baru yang sudah di-rotate. |
 | `RAPIDAPI_HOST` | tidak | Default `social-download-all-in-one.p.rapidapi.com`. |
 | `RAPIDAPI_ENDPOINT` | tidak | URL endpoint lengkap (harus https). Default `https://<host>/v1/social/autolink`. |
-| `NEXT_PUBLIC_DIGILOOT_URL` | tidak | Bila diisi, header menampilkan link ke situs Digiloot. |
 
 Jika `RAPIDAPI_KEY` kosong, `/api/resolve` menjawab `503 not_configured` dan UI menampilkan "Layanan belum dikonfigurasi".
 
